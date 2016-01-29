@@ -9,4 +9,9 @@ An experiment to build several projects on circle-ci with docker-compose
 - Services must be located in the root directory.
 - Services must contain a docker-compose.yml.
 - Services folder must start with service
-- Each compose file should contains a app and test container.
+- Each compose file should contains a test container.
+
+## Things to do
+
+- [ ] load only required images. 
+

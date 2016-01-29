@@ -1,0 +1,7 @@
+build:
+  box: zenika/compose
+  steps:
+    - script:
+        name: echo
+        code: |
+          echo "hello world!"

@@ -1,5 +1,7 @@
 # monolithic-repository
 
+[![Circle CI](https://circleci.com/gh/dstendardi/monolithic-repository.svg?style=shield)](https://circleci.com/gh/dstendardi/monolithic-repository)
+
 An experiment to build several projects on circle-ci with docker-compose
 
 ## Prerequisites

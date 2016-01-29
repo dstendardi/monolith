@@ -9,7 +9,7 @@ dependencies:
     - "~/.docker" # cache docker images
 
   pre:
-    - sudo pip install docker-compose
+    - pip install --user docker-compose
     - if [ -f ~/.docker/images.tar ]; then docker load -i ~/.docker/images.tar; fi
     - docker images
 

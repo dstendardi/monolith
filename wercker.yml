@@ -4,4 +4,4 @@ build:
     - script:
         name: echo
         code: |
-          echo "hello world!"
+          echo "docker"

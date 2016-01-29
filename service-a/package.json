@@ -7,5 +7,8 @@
     "test": "echo tested !"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.0.1"
+  }
 }

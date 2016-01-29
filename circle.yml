@@ -3,6 +3,8 @@ machine:
     - docker
 
 dependencies:
+  cache_directories:
+    - "~/.local"  # cache pip programs (like s3pea)
   pre:
     - sudo pip install docker-compose
 

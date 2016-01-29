@@ -14,4 +14,5 @@ An experiment to build several projects on circle-ci with docker-compose
 ## Things to do
 
 - [ ] load only required images. 
+- [ ] sort dependency (service first, then apps). 
 

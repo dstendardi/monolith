@@ -1,5 +1,5 @@
 build:
-  box: zenika/compose
+  box: debian
   steps:
     - script:
         name: echo

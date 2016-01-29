@@ -1,3 +1,7 @@
-FROM node:onbuild
+FROM niaquinto/gradle
 
-EXPOSE 8080
+WORKDIR /usr/bin/app
+
+CMD []
+
+ENTRYPOINT ["gradle"]

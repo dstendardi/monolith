@@ -1,4 +1,4 @@
-package servicec;
+package serviceb;
 
 class Main {
     public static void main (String[] args){

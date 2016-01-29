@@ -1,11 +1,7 @@
 app:
   build: .
   command: assemble
-  volumes:
-    - .:/usr/bin/app
-
+  
 test:
   build: .
   command: check
-  volumes:
-    - .:/usr/bin/app

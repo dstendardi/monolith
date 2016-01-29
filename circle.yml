@@ -11,7 +11,7 @@ dependencies:
   pre:
     - sudo pip install docker-compose
     - if [ -f ~/.docker/images.tar ]; then docker load -i ~/.docker/images.tar; fi
-    - docker images 
+    - docker images
 
 
   override:
@@ -19,7 +19,7 @@ dependencies:
 
   post:
     - docker images
-    - if [ ! -f ~/.docker/images.tar ]; then mkdir -p ~/.docker; docker save -o ~/.docker/images.tar $(docker images | grep -v '^REPOSITORY' | grep -v '^<none>' | awk '{print $1}' | uniq); fi
+    - if [ ! -f ~/.docker/images.tar ]; then mkdir -p ~/.docker; fi; docker save -o ~/.docker/images.tar $(docker images | grep -v '^REPOSITORY' | grep -v '^<none>' | awk '{print $1}' | uniq);
 
 test:
 

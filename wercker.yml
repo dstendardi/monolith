@@ -1,5 +1,5 @@
 build:
-  box: ddduportal/docker-compose
+  box: dduportal/docker-compose
   steps:
     - script:
         name: echo

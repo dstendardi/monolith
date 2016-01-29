@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-    - pip install docker-compose
+    - sudo pip install docker-compose
 
   override:
     - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | xargs -I {} echo docker-compose -f {}/docker-compose.test.yml up

@@ -1,7 +1,0 @@
-build:
-  box: dduportal/docker-compose
-  steps:
-    - script:
-        name: echo
-        code: |
-          docker-compose -v

@@ -1,7 +1,7 @@
 build:
-  box: debian
+  box: ddduportal/docker-compose
   steps:
     - script:
         name: echo
         code: |
-          docker -v
+          docker-compose -v

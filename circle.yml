@@ -24,4 +24,5 @@ dependencies:
 
 test:
 
-  override: echo 'tests are run during dependency phase'
+  override:
+    - echo 'tests are run during dependency phase'

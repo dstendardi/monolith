@@ -10,6 +10,15 @@ An experiment to build several projects on circle-ci with docker-compose
 - Services must contain a docker-compose.yml.
 - Services folder must start with service
 - Each compose file should contains a test container.
+- Set a DOCKER_IP variable pointing to your docker host
+
+## Running
+
+Run docker-compose at the root of the repository
+
+```bash
+docker-compose up 
+```
 
 ## Things to do
 

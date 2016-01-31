@@ -2,6 +2,8 @@ app-a:
   build: ./app-a/.
   links:
     - consul
+    - registrator
+    - service-a
   ports:
     - 3000:3000
 
@@ -9,6 +11,8 @@ service-a:
   build: ./service-a/.
   links:
     - consul
+    - registrator
+    - dynamodb
   ports:
     - 3001:3000
 

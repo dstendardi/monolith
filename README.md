@@ -13,6 +13,6 @@ An experiment to build several projects on circle-ci with docker-compose
 
 ## Things to do
 
+- [x] sort dependencies (service first, then apps). 
 - [ ] load only required images. 
-- [ ] sort dependencies (service first, then apps). 
 

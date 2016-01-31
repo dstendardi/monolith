@@ -4,6 +4,12 @@
 
 An experiment to build several projects on circle-ci with docker-compose
 
+## Overview
+
+<br />
+<img src="https://github.com/dstendardi/monolithic-repository/raw/master/schema.png" width="500">
+
+
 ## Prerequisites
 
 - Apps must be located in the root directory.

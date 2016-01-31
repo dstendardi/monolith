@@ -6,10 +6,10 @@ An experiment to build several projects on circle-ci with docker-compose
 
 ## Prerequisites
 
-- Services must be located in the root directory.
-- Services must contain a docker-compose.yml.
-- Services folder must start with service
-- Each compose file should contains a test container.
+- Apps must be located in the root directory.
+- Apps must be registrated docker-compose.yml.
+- Apps folders must start with app (aggregation of service) or service
+- Each apps should expose a test command.
 - Set a DOCKER_IP variable pointing to your docker host
 
 ## Running

@@ -1,7 +1,7 @@
 const util = require('./util');
 
 describe('server', () => {
-
+  
   it('returns dynamo tables using service a', () =>
     util
       .request()

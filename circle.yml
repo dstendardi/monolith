@@ -15,7 +15,7 @@ dependencies:
 
 
   override:
-    - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | uniq | grep -i service | xargs -I {} docker-compose -f {}/docker-compose.yml up test
+    - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | uniq | sort | grep 'app-\|service-' | xargs -I {} docker-compose -f docker-compose.yml build {}
 
   post:
     - docker images
@@ -24,4 +24,4 @@ dependencies:
 test:
 
   override:
-    - echo "tests are executed in install phase."
+    - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | uniq | sort | grep 'app-\|service-' | xargs -I {} docker-compose -f docker-compose.yml run {} test

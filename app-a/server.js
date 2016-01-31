@@ -8,13 +8,14 @@ const consul = require('consul')({
   promisify: true
 });
 
-const dynamo = require('node-consul-discover/discover-dynamodb')({
+const request = require('node-consul-discover/discover-request')({
   consul: consul,
-  service: 'dynamodb-local'
+  service: 'monolithicrepository_service-a'
 });
 
 app.use(function *() {
-  this.body = yield dynamo(dynamo => dynamo.listTables());
+  let content = yield request(request => request.get("/"));
+  this.body = "from service a : " + content;
 });
 
 app.listen(3000);

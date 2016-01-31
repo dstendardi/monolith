@@ -1,0 +1,41 @@
+app-a:
+  build: ./app-a/.
+  links:
+    - consul
+  ports:
+    - 3000:3000
+
+service-a:
+  build: ./service-a/.
+  links:
+    - consul
+  ports:
+    - 3001:3000
+
+service-b:
+  build: ./service-b/.
+  links:
+    - consul
+
+registrator:
+  command: -internal consul://consul:8500
+  image: gliderlabs/registrator:latest
+  links:
+    - consul
+  volumes:
+    - "/var/run/docker.sock:/tmp/docker.sock"
+
+consul:
+  command: -server -bootstrap-expect 1 -advertise $DOCKER_IP
+  image: progrium/consul:latest
+  ports:
+    - "8300:8300"
+    - "8400:8400"
+    - "8500:8500"
+    - "8600:53/udp"
+
+dynamodb:
+  image: tray/dynamodb-local
+  command: -port 7777
+  ports:
+    - "7777:7777"

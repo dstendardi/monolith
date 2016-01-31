@@ -29,5 +29,6 @@ docker-compose up
 ## Things to do
 
 - [x] sort dependencies (service first, then apps). 
+- [ ] try a real rpc library supporting bi-directionnal streaming (grpc). 
 - [ ] load only required images. 
 

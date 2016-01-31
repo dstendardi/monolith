@@ -28,7 +28,8 @@ docker-compose up
 
 ## Things to do
 
-- [x] sort dependencies (service first, then apps). 
+- [x] sort dependencies (service first, then apps).
+- [ ] circuit breaker integration with consul
 - [ ] try a real rpc library supporting bi-directionnal streaming (grpc). 
 - [ ] load only required images. 
 

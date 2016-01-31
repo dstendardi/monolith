@@ -2,7 +2,7 @@ const util = require('./util');
 
 describe('server', () => {
 
-  it('should return table names in dynamo, through service a', () =>
+  it('returns dynamo tables using service a', () =>
     util
       .request()
       .get('/')
@@ -11,5 +11,4 @@ describe('server', () => {
         util.expect(res.text).to.equal('from service a : {"TableNames":[]}')
       })
   );
-
 });

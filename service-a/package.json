@@ -10,9 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "consul": "^0.23.0",
-    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890",
     "koa": "^1.1.2",
-    "lodash": "^4.0.1"
+    "consul": "^0.23.0",
+    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890"
   }
 }

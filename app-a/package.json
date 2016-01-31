@@ -12,7 +12,6 @@
   "dependencies": {
     "consul": "^0.23.0",
     "koa": "^1.1.2",
-    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890",
-    "request-promise": "^2.0.0"
+    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890"
   }
 }

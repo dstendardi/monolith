@@ -1,6 +1,6 @@
 "use strict";
 
-const app = require('koa')();
+const app = module.exports = require('koa')();
 
 const consul = require('consul')({
   host: process.env['CONSUL_PORT_8500_TCP_ADDR'],
@@ -18,4 +18,4 @@ app.use(function *() {
   this.body = "from service a : " + content;
 });
 
-app.listen(3000);
+if (!module.parent) app.listen(3000);

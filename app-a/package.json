@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo tested !"
+    "test": "mocha test/*"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,10 @@
     "consul": "^0.23.0",
     "koa": "^1.1.2",
     "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest-as-promised": "^2.0.2"
   }
 }

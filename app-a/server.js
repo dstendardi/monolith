@@ -10,7 +10,7 @@ const consul = require('consul')({
 
 const request = require('node-consul-discover/discover-request')({
   consul: consul,
-  service: 'monolithicrepository_service-a'
+  service: 'monolith_service-a'
 });
 
 app.use(function *() {

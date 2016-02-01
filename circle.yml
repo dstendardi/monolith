@@ -13,7 +13,6 @@ dependencies:
     - if [ -f ~/.docker/images.tar ]; then docker load -i ~/.docker/images.tar; fi
     - docker images
 
-
   override:
     - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | uniq | sort | grep 'app-\|service-' | xargs -I {} docker-compose -f docker-compose.yml build {}
     - git diff --name-only `basename $CIRCLE_COMPARE_URL` | cut -d'/'  -f-1 | uniq | sort | grep 'app-\|service-' | xargs -I {} docker-compose -f docker-compose.yml run {} test
@@ -26,3 +25,4 @@ test:
 
   override:
     - echo 'tests are run during dependency phase'
+    - cp -r ./.test-reports/* $CIRCLE_TEST_REPORTS/.

@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha test/* --reporter xunit > /test-reports/output.xml"
+    "test": "mocha test/*"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "consul": "^0.23.0",
     "koa": "^1.1.2",
-    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#33e9510"
+    "node-consul-discover": "https://github.com/dstendardi/node-consul-discover.git#1e37890"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -4,8 +4,6 @@ app-a:
     - consul
     - registrator
     - service-a
-  volumes:
-    - ./.test-reports/app-a:/test-reports
   ports:
     - 3000:3000
 

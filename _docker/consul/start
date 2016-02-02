@@ -3,5 +3,5 @@
 /bin/consul agent -server \
   -config-dir=/config \
   -data-dir=/data \
-  -bootstrap-expect 1 \
-  -bind ${TUTUM_IP_ADDRESS:-0.0.0.0}
+  -ui \
+  -bootstrap

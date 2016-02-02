@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/bin/registrator -internal consul://${CONSUL_PORT_8500_TCP_ADDR:-consul}:${CONSUL_PORT_8500_TCP_PORT:-8500}

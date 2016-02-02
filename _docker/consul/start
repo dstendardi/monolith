@@ -1,9 +1,8 @@
 #!/bin/sh
-BIND=`getent hosts ${HOSTNAME} | awk '{print $1}'`
-
+BIND=`dirname $TUTUM_IP_ADDRESS`
 /bin/consul agent -server \
   -config-dir=/config \
   -data-dir=/data \
   -ui \
   -bootstrap \
-  -client ${BIND}
+  -client $BIND

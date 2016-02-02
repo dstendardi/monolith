@@ -4,4 +4,4 @@ ENDPOINT=consul://${CONSUL_PORT_8500_TCP_ADDR:-consul}:${CONSUL_PORT_8500_TCP_PO
 
 echo "Starting registrator with endpoint $ENDPOINT"
 
-/bin/registrator $ENDPOINT
+/bin/registrator -internal $ENDPOINT

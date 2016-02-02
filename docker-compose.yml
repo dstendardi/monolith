@@ -30,8 +30,8 @@ registrator:
     - "/var/run/docker.sock:/tmp/docker.sock"
 
 consul:
-  command: -server -bootstrap-expect 1 -advertise $DOCKER_IP
-  image: progrium/consul:latest
+  command: -bootstrap
+  image: gliderlabs/consul-server:latest
   ports:
     - "8300:8300"
     - "8400:8400"

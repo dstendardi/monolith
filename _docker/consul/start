@@ -4,5 +4,4 @@
   -config-dir=/config \
   -data-dir=/data \
   -bootstrap-expect 1 \
-  -bind ${TUTUM_IP_ADDRESS:-0.0.0.0} \
-  -advertise ${TUTUM_IP_ADDRESS}
+  -bind ${TUTUM_IP_ADDRESS:-0.0.0.0}

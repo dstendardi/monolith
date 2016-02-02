@@ -1,4 +1,4 @@
-FROM gliderlabs/consul-agent
+FROM gliderlabs/consul-server
 
 ADD ./start /bin/.
 
